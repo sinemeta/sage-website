@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Topic</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="topbar">
+      <a class="small-link" href="index.html">← Home</a>
+      <a class="small-link" href="#" id="copy_link_btn">Copy link</a>
+    </div>
+    <div class="rule"></div>
+
+    <header style="padding: 18px 0;">
+      <h1 class="h1" id="topic_title">Loading…</h1>
+      <div class="meta" id="topic_meta"></div>
+      <div class="topic-kws" id="topic_kws" style="margin-top:10px;"></div>
+    </header>
+
+    <div class="rule"></div>
+
+    <main class="columns">
+      <section class="col">
+        <h3>Positive</h3>
+        <div id="pos_box" class="state">Loading…</div>
+      </section>
+      <section class="col">
+        <h3>Neutral</h3>
+        <div id="neu_box" class="state">Loading…</div>
+      </section>
+      <section class="col">
+        <h3>Negative</h3>
+        <div id="neg_box" class="state">Loading…</div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="topic.js"></script>
+</body>
+</html>

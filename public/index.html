@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>?????</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="topbar">
+      <div id="today_line">Monday, March 2, 2026</div>
+      <a class="small-link" href="#" id="refresh_btn">Refresh</a>
+    </div>
+    <div class="rule"></div>
+
+    <header class="masthead">
+      <div class="title">?????</div>
+      <div class="tagline">An aggregator — ranked by relevance, grouped by sentiment</div>
+    </header>
+
+    <div class="rule"></div>
+    <nav class="nav" aria-label="Sections">
+      <a href="#" data_section="Top">Top</a>
+      <a href="#" data_section="World">World</a>
+      <a href="#" data_section="Business">Business</a>
+      <a href="#" data_section="Science">Science</a>
+      <a href="#" data_section="Opinion">Opinion</a>
+    </nav>
+    <div class="rule"></div>
+
+    <div class="header-search">
+      <form class="searchbox" id="search_form">
+        <input id="search_input" placeholder="Search topics, publishers, keywords..." aria-label="Search"/>
+        <button type="submit">Search</button>
+      </form>
+    </div>
+
+    <main class="layout">
+      <section>
+        <h1 class="h1">Top Topics</h1>
+        <div class="meta">
+          <span id="topic_count">—</span>
+          <span>Sorted by topic relevance</span>
+        </div>
+
+        <div id="topics" class="state">Loading…</div>
+
+        <div style="padding-top:16px;">
+          <a class="small-link" href="#" id="load_more_btn">Load more</a>
+        </div>
+      </section>
+
+      <aside class="sidebar">
+        <h2 class="section-title">What this shows</h2>
+        <p class="state" style="padding-top:0;">
+          Topics are groups. Articles inside a topic are partitioned into positive/neutral/negative by sign (0–1).
+        </p>
+
+        <h2 class="section-title">Publisher map</h2>
+        <div id="publisher_list" class="state">Loading…</div>
+      </aside>
+    </main>
+  </div>
+
+  <script type="module" src="home.js"></script>
+</body>
+</html>
