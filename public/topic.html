@@ -1,43 +1,51 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Topic</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <div class="container">
-    <div class="topbar">
-      <a class="small-link" href="index.html">← Home</a>
-      <a class="small-link" href="#" id="copy_link_btn">Copy link</a>
+  <div class="container topic-page">
+    <div class="topbar rule topic-topbar">
+      <a href="./index.html" class="small-link">← Home</a>
+      <div class="toolbar-row tight-row">
+        <label class="inline-control">
+          <span>Sort articles</span>
+          <select id="article_sort">
+            <option value="relevance">Relevance</option>
+            <option value="newest">Newest</option>
+            <option value="most_positive">Most positive</option>
+            <option value="most_negative">Most negative</option>
+          </select>
+        </label>
+        <button id="copy_link_btn" class="button">Copy link</button>
+      </div>
     </div>
-    <div class="rule"></div>
 
-    <header style="padding: 18px 0;">
+    <header class="topic-header rule">
       <h1 class="h1" id="topic_title">Loading…</h1>
-      <div class="meta" id="topic_meta"></div>
-      <div class="topic-kws" id="topic_kws" style="margin-top:10px;"></div>
+      <div id="topic_meta" class="meta"></div>
+      <div id="topic_kws" class="topic-kws roomy-kws"></div>
     </header>
 
-    <div class="rule"></div>
-
-    <main class="columns">
-      <section class="col">
+    <section class="columns">
+      <div class="col">
         <h3>Positive</h3>
         <div id="pos_box" class="state">Loading…</div>
-      </section>
-      <section class="col">
+      </div>
+      <div class="col">
         <h3>Neutral</h3>
         <div id="neu_box" class="state">Loading…</div>
-      </section>
-      <section class="col">
+      </div>
+      <div class="col">
         <h3>Negative</h3>
         <div id="neg_box" class="state">Loading…</div>
-      </section>
-    </main>
+      </div>
+    </section>
   </div>
 
-  <script type="module" src="topic.js"></script>
+  <script type="module" src="./topic.js"></script>
 </body>
 </html>
